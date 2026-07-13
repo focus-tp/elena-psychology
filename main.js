@@ -17,4 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial trigger
     setTimeout(revealOnScroll, 100);
     window.addEventListener('scroll', revealOnScroll);
+
+    // Card Flip Logic
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Ignore clicks on links or buttons inside the card
+            if (e.target.closest('a') || e.target.closest('button')) {
+                return;
+            }
+            this.classList.toggle('flipped');
+        });
+    });
 });
