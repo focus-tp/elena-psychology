@@ -239,11 +239,11 @@ h1, h2, h3, .logo { font-family: var(--font-heading); text-transform: uppercase;
 @media (max-width: 1024px) {
     .hero { align-items: flex-start; padding-top: 140px; padding-bottom: 80px; }
     .hero-grid, .about-grid { grid-template-columns: 1fr; gap: 40px; }
-    .about-portrait { grid-row: 1; margin-bottom: 60px; height: auto; }
+    .about-number { grid-row: 1; text-align: left; border-right: none; border-bottom: none; padding-right: 0; padding-bottom: 10px; }
+    .about-portrait { grid-row: 2; margin-bottom: 20px; height: auto; }
     .services-grid { grid-template-columns: 1fr; }
     .service-card-wrapper:nth-child(even) { margin-top: 0; }
     .services { padding-top: 100px; }
-    .about-number { text-align: left; border-right: none; border-bottom: 1px solid rgba(0,0,0,0.1); padding-right: 0; padding-bottom: 40px; }
 }
 
 @media (max-width: 768px) {
