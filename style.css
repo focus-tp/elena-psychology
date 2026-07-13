@@ -237,7 +237,8 @@ h1, h2, h3, .logo { font-family: var(--font-heading); text-transform: uppercase;
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .hero { align-items: flex-start; padding-top: 140px; padding-bottom: 80px; }
+    .section-padding { padding: 100px 0; }
+    .hero { align-items: flex-start; padding-top: 140px; padding-bottom: 40px; }
     .hero-grid, .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-number { grid-row: 1; text-align: left; border-right: none; border-bottom: none; padding-right: 0; padding-bottom: 10px; }
     .about-portrait { grid-row: 2; margin-bottom: 20px; height: auto; }
@@ -247,6 +248,7 @@ h1, h2, h3, .logo { font-family: var(--font-heading); text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
+    .section-padding { padding: 60px 0; }
     html, body { overflow-x: hidden; width: 100%; } /* Prevents horizontal scroll entirely */
     .container { padding: 0 15px; }
     
@@ -259,7 +261,7 @@ h1, h2, h3, .logo { font-family: var(--font-heading); text-transform: uppercase;
     .header-call-btn .phone-icon { margin-right: 0; }
     .header .btn { padding: 8px 10px; }
     
-    .hero { padding-top: 100px; padding-bottom: 60px; }
+    .hero { padding-top: 100px; padding-bottom: 20px; }
     
     .hero-title { font-size: clamp(1.8rem, 8vw, 3rem); word-break: break-word; hyphens: auto; }
     .hero-subtitle { font-size: 0.7rem; gap: 0.5rem; flex-wrap: wrap; }
